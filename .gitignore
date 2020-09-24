@@ -1,5 +1,8 @@
 
 **/bin
+!*.vert
+!*.frag
+
 **/.vscode
 
 # Ramon noticed an issue with .db getting added
