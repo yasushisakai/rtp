@@ -10,5 +10,4 @@ class ofApp : public ofBaseApp{
 		void draw();
 
 		ofShader shader;
-		ofPlanePrimitive plane;
 };
