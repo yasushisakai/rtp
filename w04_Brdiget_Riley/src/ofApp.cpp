@@ -19,6 +19,7 @@ void ofApp::draw(){
     ofBackground(0);
     shader.begin();
     shader.setUniform2f("windowSize",float(ofGetWidth()),float(ofGetHeight()));
+    shader.setUniform2f("mouseCoord",float(mouseX), float(mouseY));
     // ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());
     ofTranslate(ofGetWidth()/2.0,ofGetHeight()/2.0);
     plane.draw();

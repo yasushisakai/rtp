@@ -7,6 +7,7 @@ int main( ){
 	ofGLWindowSettings settings;
 	settings.setGLVersion(3,2);
 	settings.setSize(706,800);
+	settings.title = "Recreation of Bridget Riley's \"Straight Curve (1963)\"";
 	ofCreateWindow(settings);
 
 
