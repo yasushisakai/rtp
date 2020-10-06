@@ -41,8 +41,8 @@ void main()
     vec2 unit = 1.0 / vec2(float(divX), float(divY));
     vec2 wavyness = vec2(-1.8,1.0);
     // this adds mouse interaction;
-    // vec2 mt = (mouseCoord / windowSize) - 0.5;
-    // vec2 wavyness = vec2(-1.3, 1.0) + mt*2.0;
+    vec2 mt = (mouseCoord / windowSize) - 0.5;
+    wavyness += mt*2.0;
 
     for (int i=0;i<divX;i++){
         for(int j=0;j<divY;j++){
