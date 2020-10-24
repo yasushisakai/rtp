@@ -7,8 +7,6 @@ using namespace glm;
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    // int doesIntersect = glm::intersectLineSphere(pt1,pt2,center,radius,intersect0,normal0,intersect1,normal1);
-    // ofLineSegmentIntersection(pt1,pt2,pt3,pt4,intersect);
 
     vec3 origin = vec3(0.0,0.0,0.0);
     vec3 top = vec3(0.0,RADIUS,0.0);
@@ -167,6 +165,10 @@ void ofApp::drawDiamond(vector<vec3> points){
     vec3 b = points.at(0);
     vec3 mid = (a+b)*0.5;
     diamond.push_back(mid); 
+
+    ofDrawLine(diamond.at(0),diamond.at(2));
+    ofDrawLine(diamond.at(1),diamond.at(3));
+
     ofSetColor(255,200);
     ofFill();
     ofBeginShape();
