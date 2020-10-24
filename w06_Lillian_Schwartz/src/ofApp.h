@@ -21,9 +21,7 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
-		ofImage ping, pong;
-
-		void dilute(ofImage &src, ofImage &dest);
-		void subtract(ofImage &src, ofImage &dest);
-		
+		shared_ptr<ofImage> ping, pong;
+		void dilute();
+		void subtract();
 };
