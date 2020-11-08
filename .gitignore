@@ -1,4 +1,7 @@
 
+# heavy movies
+*.mov
+
 **/.vscode
 
 # Ramon noticed an issue with .db getting added
