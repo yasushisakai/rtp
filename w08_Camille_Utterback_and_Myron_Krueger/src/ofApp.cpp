@@ -2,34 +2,26 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    // grabber.listDevices();
-    // grabber.setup(640,480);
+    grabber.listDevices();
+    grabber.setDeviceID(0);
+    grabber.setup(640,480);
 
-    video.load("car.mov");
-    // video.play(); // key pressed
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    video.update();
     grabber.update();
     //if(grabber.isFrameNew()) {
-
-
     //}
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    // grabber.draw(0,0);
-    video.draw(0,0);
+    grabber.draw(0,0);
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    if (!video.isPlaying()) {
-        video.play();
-    }
 }
 
 //--------------------------------------------------------------

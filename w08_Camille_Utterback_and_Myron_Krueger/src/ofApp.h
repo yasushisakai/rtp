@@ -22,6 +22,4 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 
 		ofVideoGrabber grabber; // FIXME: can't load 
-		
-		ofVideoPlayer video;
 };
