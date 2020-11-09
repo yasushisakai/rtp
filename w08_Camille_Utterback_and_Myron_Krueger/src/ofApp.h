@@ -22,4 +22,9 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 
 		ofVideoGrabber grabber; // FIXME: can't load 
+		ofImage prevGrab;
+		ofImage deltas; // records the pixel distance 
+
+		ofVideoPlayer car;
+		ofImage frame;
 };
